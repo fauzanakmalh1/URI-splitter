@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"/>
+        <link rel="icon" type="image/png" href="img/logo.png"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"/>
+        <script type="text/javascript" src="js/main.js"></script>
+        <title>Split URI</title>
+    </head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid animate__animated animate__rubberBand">
+            <span class="navbar-brand mb-0 mx-2 h1">Semantik Web</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="ml-auto mb-0 mx-2">
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <span class="navbar-text">Assignment</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container-fluid my-4 animate__animated animate__bounce">
+        <div class="row">
+            <div class="col">
+                <div class="bg-light p-5 rounded-lg m-3 text-center border-color">
+                    <h1 class="display-4 animate__animated animate__wobble">Split URI Program</h1>
+                    <hr class="my-4 animate__animated animate__fadeInLeft">
+                    <p class="lead animate__animated animate__tada">Program to split (protocol, domain, port, path, query, fragment) from URI (Uniform Resource Identifier)</p>
+                    <hr class="my-4 animate__animated animate__fadeInRight">
+                    <div class="col-md-8 offset-md-2 animate__animated animate__fadeInDown">
+                        <label for="input" class="my-2">Please fill the URI in this input area!</label>
+                        <input type="text" id="input" class="form-control form-radius my-2" placeholder="Type URI..."  value="http://example.com:3000/pathname/?search=test#hash">
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-click mx-4 my-2 animate__animated animate__zoomInLeft" onclick="splitURI()">Split!</button>
+                    <button type="button" class="btn btn-secondary btn-reload mx-4 my-2 animate__animated animate__zoomInRight" onclick="location.reload()">Reload!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="result" class="container-fluid animate__animated animate__slideInUp">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 mt-4">
+                <div class="bg-light p-4 rounded-lg m-3 text-justify border-color animate__animated animate__zoomInUp">
+                    <h2 class="text-center animate__animated animate__bounceInUp">Result</h2>
+                    <p id="warning" class="text-center mt-4"></p>
+                    <p id="uri"></p>
+                    <p id="protocol"></p>
+                    <p id="domain"></p>
+                    <p id="port"></p>
+                    <p id="path"></p>
+                    <p id="query"></p>
+                    <p id="fragment"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" class="topButton" title="Go To Top"><i class="bi bi-caret-up animate__animated animate__slideInLeft"></i></button>
+
+    <footer class="footer p-4 animate__animated animate__fadeInUp">
+        <div class="container">
+            <span>&copy; 140810180005 - Fauzan Akmal Hariz</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+body {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#result{
+    display: none;
+}
+
+.border-color {
+    border: 4px solid #FF5000;
+    border-radius: 50px;
+    box-shadow: 15px 20px #FFA700;
+}
+
+.lead{
+    color: #FFA700;
+}
+
+.form-control{
+    border: 4px solid #FFA700;
+    color: #FF5000;
+}
+
+.form-control:focus {
+    border: 4px solid #FF5000;
+    color: #FFA700;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #FF5000;
+}
+
+.form-radius {
+    border-radius: 50px;
+}
+
+.btn-click {
+    background-color: #FF5000;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.btn-reload {
+    background-color: #FFA700;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.topButton {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border: 2px solid #FF5000;
+    background-color: #FFA700;
+    color: #FF5000;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50px;
+}
+
+.topButton:hover {
+    background-color: #555;
+    border-color: #555;
+    color: #FFF;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 6%;
+    text-align: center;
+}
